@@ -8,6 +8,7 @@ import './App.css';
 import Simple1Page from "./pages/Simple1Page";
 import Simple2Page from "./pages/Simple2Page";
 import OverLoadedPage from "./pages/OverLoadedPage";
+import NotFoundPage from "./pages/NotFoundPage";
 
 setupIonicReact();
 
@@ -18,6 +19,8 @@ function App() {
         <Route path="/" component={Simple1Page} exact={true} />
         <Route path="/simple2" component={Simple2Page} exact={true} />
         <Route path="/overloaded" component={OverLoadedPage} exact={true} />
+
+        <Route component={NotFoundPage} />
       </IonRouterOutlet>
     </>
   );
